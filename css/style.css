@@ -1,0 +1,251 @@
+@font-face {
+	font-family: Ubuntu;
+	src: url('../assets/fonts/Ubuntu-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Ubuntu;
+	src: url('../assets/fonts/Ubuntu-Medium.ttf') format('truetype');
+	font-weight: 500 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: Ubuntu;
+	src: url('../assets/fonts/Ubuntu-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+*,
+::before,
+::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+	font-family: Ubuntu;
+}
+/* General class */
+.section-personal,
+.section-plan,
+.section-add-on,
+.section-finishing {
+	border: 1px solid blue;
+	width: 100%;
+	padding-inline-end: 15rem;
+}
+.heading-primary {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+.heading-secondary {
+	font-size: 1.8rem;
+	font-weight: 500;
+	margin-bottom: 3rem;
+}
+.step-clicked {
+	background-color: red;
+}
+.hide {
+	display: none;
+}
+
+.container {
+	border: 1px solid red;
+	max-width: 110rem;
+	margin: 0 auto;
+	display: flex;
+	gap: 10rem;
+}
+
+.section-step {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	border: 1px solid red;
+	width: 50%;
+}
+.step {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+.step-btn {
+	font-size: 1.8rem;
+	border: 1px solid #000;
+	width: 4.2rem;
+	padding-block: 1rem;
+	text-align: center;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.step-content {
+	text-transform: uppercase;
+}
+.step-level {
+	font-weight: 600;
+	font-size: 1.2rem;
+}
+
+.step-title {
+	font-size: 1.4rem;
+	font-weight: 700;
+}
+/* Step 1 */
+
+.form {
+	border: 1px solid green;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.form-box label {
+	margin-bottom: 0.7rem;
+	font-size: 1.8rem;
+	font-weight: 500;
+	display: block;
+	text-transform: capitalize;
+}
+.form-box input {
+	display: block;
+	height: 4rem;
+	width: 100%;
+	padding-inline: 1rem;
+	border: none;
+	border: 1px solid;
+	border-radius: 5px;
+}
+
+/* Step 2 */
+.plans {
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid red;
+}
+.plan {
+	border: 1px solid;
+	border-radius: 5px;
+	width: 15rem;
+	display: flex;
+	flex-direction: column;
+	gap: 5rem;
+	padding: 1.3rem 1.6rem;
+	margin-bottom: 3.5rem;
+}
+
+.plan-img {
+	width: 4rem;
+}
+.plan-img img {
+	width: 100%;
+}
+.plan-content {
+}
+.plan-type {
+	font-size: 1.8rem;
+	font-weight: 600;
+	margin-bottom: 0.4rem;
+}
+.plan-price {
+	font-size: 1.4rem;
+	font-weight: 400;
+}
+
+.plan-durations {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+	border-radius: 5px;
+	padding-block: 1rem;
+	background-color: rgb(144, 140, 140);
+}
+.plan-duration {
+	font-size: 1.6rem;
+	font-weight: 500;
+}
+/* Checkbox */
+.switch {
+	display: inline-block;
+	width: 5rem;
+	height: 2rem;
+	position: relative;
+}
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	transition: all 0.4s;
+}
+.slider::before {
+	content: '';
+	position: absolute;
+	height: 1.5rem;
+	width: 1.5rem;
+	top: 1.5px;
+	left: 5px;
+	bottom: 0.4rem;
+	background-color: #fff;
+	transition: all 0.4s;
+}
+input:checked + .slider {
+	background-color: #000;
+}
+
+input:focus + .slider {
+	box-shadow: 0 0 1px #000;
+}
+
+input:checked + .slider::before {
+	transform: translateX(26px);
+}
+
+.slider.round {
+	border-radius: 34px;
+}
+
+.slider.round:before {
+	border-radius: 50%;
+}
+
+/* Step 3 */
+.add-ons {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+.add-on {
+	border: 1px solid;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+	padding: 1.3rem 1.6rem;
+}
+.add-on--content {
+}
+.add-on--title {
+	font-size: 1.8rem;
+	margin-bottom: 0.8rem;
+}
+.add-on--paragraph {
+	font-size: 1.4rem;
+}
+.add-on--price {
+	margin-left: auto;
+	font-size: 1.4rem;
+}
