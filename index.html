@@ -55,7 +55,7 @@
 					</div>
 				</section>
 				<!-- Step 1 -->
-				<section class="section-personal hide">
+				<section class="section-personal">
 					<h1 class="heading-primary">Personal info</h1>
 					<p class="heading-secondary">
 						Please provide your name, email address, and phone number
@@ -87,6 +87,9 @@
 							/>
 						</div>
 					</form>
+					<div class="cta section-personal-cta">
+						<button class="next-btn">Next Step</button>
+					</div>
 				</section>
 				<!-- Step 2 -->
 				<section class="section-plan hide">
@@ -140,6 +143,10 @@
 						</label>
 						<p class="plan-duration">Yearly</p>
 					</div>
+					<div class="cta section-plan-cta">
+						<button class="back-btn">Go Back</button>
+						<button class="next-btn">Next Step</button>
+					</div>
 				</section>
 				<!-- Step 3 -->
 				<section class="section-add-on hide">
@@ -147,7 +154,7 @@
 					<p class="heading-secondary">
 						Add-ons help enhance your gaming experience
 					</p>
-					<div class="add-ons">
+					<div class="add-ons hide">
 						<div class="add-on">
 							<input type="checkbox" />
 							<div class="add-on--content">
@@ -177,9 +184,13 @@
 							<p class="add-on--price">+$2/mo</p>
 						</div>
 					</div>
+					<div class="cta section-plan-cta">
+						<button class="back-btn">Go Back</button>
+						<button class="next-btn">Next Step</button>
+					</div>
 				</section>
 				<!-- Step 4 -->
-				<section class="section-finishing">
+				<section class="section-finishing hide">
 					<h1 class="heading-primary">Finishing up</h1>
 					<p class="heading-secondary">
 						Double-check everything looks OK before confirming
@@ -193,19 +204,23 @@
 							<p class="finish-plan--amount">$9/mo</p>
 						</div>
 						<div class="finish-add-ons">
-							<div>
-								<p class="add-on--title">Online service</p>
-								<p class="add-on--price">+$1/mo</p>
+							<div class="finish-add-on">
+								<p class="finish-add-on--title">Online service</p>
+								<p class="finish-add-on--price">+$1/mo</p>
 							</div>
-							<div>
-								<p class="add-on--title">Larger storage</p>
-								<p class="add-on--price">+$2/mo</p>
+							<div class="finish-add-on">
+								<p class="finish-add-on--title">Larger storage</p>
+								<p class="finish-add-on--price">+$2/mo</p>
 							</div>
 						</div>
 					</div>
 					<div class="total">
-						<p>Total (per month)</p>
-						<p>+$12/mo</p>
+						<p class="total-paragraph">Total (per month)</p>
+						<p class="total-price">+$12/mo</p>
+					</div>
+					<div class="cta section-plan-cta">
+						<button class="back-btn">Cancel</button>
+						<button class="next-btn">Confirm</button>
 					</div>
 				</section>
 			</div>

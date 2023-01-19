@@ -34,9 +34,10 @@ html {
 .section-plan,
 .section-add-on,
 .section-finishing {
-	border: 1px solid blue;
+	/* border: 1px solid blue; */
 	width: 100%;
 	padding-inline-end: 15rem;
+	padding-block-start: 5rem;
 }
 .heading-primary {
 	font-size: 3rem;
@@ -55,19 +56,21 @@ html {
 }
 
 .container {
-	border: 1px solid red;
 	max-width: 110rem;
-	margin: 0 auto;
+	margin: 5rem auto;
 	display: flex;
 	gap: 10rem;
 }
 
 .section-step {
+	padding-block: 3rem 45rem;
+	padding-inline: 3rem;
 	display: flex;
 	flex-direction: column;
 	gap: 2rem;
-	border: 1px solid red;
 	width: 50%;
+	background-image: url(../assets/images/bg-sidebar-desktop.svg);
+	background-size: cover;
 }
 .step {
 	display: flex;
@@ -95,10 +98,30 @@ html {
 	font-size: 1.4rem;
 	font-weight: 700;
 }
+.cta {
+	width: 100%;
+	display: flex;
+	margin-top: 29rem;
+}
+.back-btn {
+	border: none;
+	background-color: #fff;
+	font-size: 1.4rem;
+	font-weight: 600;
+	cursor: pointer;
+}
+.next-btn {
+	border: none;
+	padding: 1.4rem 2rem;
+	border-radius: 5px;
+	font-size: 1.4rem;
+	font-weight: 600;
+	cursor: pointer;
+}
 /* Step 1 */
 
 .form {
-	border: 1px solid green;
+	/* border: 1px solid green; */
 	display: flex;
 	flex-direction: column;
 	gap: 2rem;
@@ -120,12 +143,15 @@ html {
 	border: 1px solid;
 	border-radius: 5px;
 }
+.section-personal-cta {
+	justify-content: end;
+}
 
 /* Step 2 */
 .plans {
 	display: flex;
 	justify-content: space-between;
-	border: 1px solid red;
+	/* border: 1px solid red; */
 }
 .plan {
 	border: 1px solid;
@@ -169,6 +195,11 @@ html {
 	font-size: 1.6rem;
 	font-weight: 500;
 }
+.section-plan-cta {
+	justify-content: space-between;
+	align-self: flex-end;
+}
+
 /* Checkbox */
 .switch {
 	display: inline-block;
@@ -248,4 +279,58 @@ input:checked + .slider::before {
 .add-on--price {
 	margin-left: auto;
 	font-size: 1.4rem;
+}
+
+/* Step 4 */
+.finish {
+	background-color: rgb(163, 163, 163);
+	padding: 2.5rem 3rem;
+	border-radius: 5px;
+	margin-bottom: 2rem;
+}
+.finish-plan {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid;
+	padding-bottom: 2rem;
+}
+.finish-plan--title {
+	font-size: 1.8rem;
+	margin-bottom: 0.4rem;
+}
+.finish-plan a {
+	font-size: 1.4rem;
+	text-transform: capitalize;
+}
+.finish-plan--amount {
+	font-size: 1.6rem;
+}
+.finish-add-ons {
+	padding-top: 2rem;
+}
+.finish-add-on {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.finish-add-on:not(:last-child) {
+	margin-bottom: 1rem;
+}
+.finish-add-on--title {
+	font-size: 1.6rem;
+}
+.finish-add-on--price {
+	font-size: 1.4rem;
+}
+.total {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 3rem;
+}
+.total-paragraph {
+	font-size: 1.4rem;
+}
+.total-price {
+	font-size: 1.8rem;
 }
